@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> //biblioteca para Potencia/Raiz 
 
 using namespace std;
 
