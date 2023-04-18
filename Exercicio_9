@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  string nome;
+  float n1, n2, n3, p1, p2, p3, mf;
+      cout << "Informe seu nome: ";
+      cin >> nome;
+      cout << "Informe suas tres notas respectivamente e seus pesos: ";
+      cin >> n1;
+      cin >> n2;
+      cin >> n3;
+      cin >> p1;
+      cin >> p2;
+      cin >> p3;
+
+      mf = ((n1*p1) + (n2*p2) + (n3*p3)) / (p1+p2+p3);
+
+      cout << "A media final ponderada: " <<mf<<" do aluno: "<< nome;
+    return 0;
+}

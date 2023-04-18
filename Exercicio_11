@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float  t_f, t_c;
+
+      cout << "Informe a temperatura: ";
+      cin >> t_f;
+
+      t_c =(t_f - 32) / (9/5);  // formula de f para c
+                                // c * (9/5) + 32
+
+      cout << "Temperatura em Fahrenheit: "<< t_f<<endl;
+      cout << " Temperatura em Celsius: " << t_c;
+
+    return 0;
+}

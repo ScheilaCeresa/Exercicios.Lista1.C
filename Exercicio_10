@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float sala_liq, sala_bruto, d_ps, d_va;
+
+      cout << "Informe seu salario bruto: ";
+      cin >> sala_bruto;
+
+      d_ps = sala_bruto * 0.10;              // porcentagem 0.0
+      d_va = (sala_bruto - d_ps )*0.30;
+      sala_liq = sala_bruto - d_ps - d_va;
+
+      cout << "Salario Bruto: "<<sala_bruto<<endl;
+      cout << "Desconto da Previdencia Social: "<<d_ps<<endl;
+      cout << "Desconto do Vale Alimentação: "<<d_va<<endl;
+      cout <<  "O salario Liquido eh de: "<<sala_liq;
+    return 0;
+}

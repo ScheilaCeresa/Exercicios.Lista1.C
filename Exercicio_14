@@ -1,0 +1,20 @@
+#include <iostream>
+# include <cmath>
+#include<stdlib.h> //biblioteca a qual a função abs pertence
+
+using namespace std;
+
+int main()
+{
+  float a, b, maior;
+
+      cout << "Informe dois valores numericos: ";
+      cin >> a;
+      cin >> b;
+
+      maior = (a + b + abs(a-b)) /2;
+
+      cout << "Valor de A: "<<a<<" Valor de B: "<<b<<" Maior valor entre eles: "<< maior;
+
+    return 0;
+}

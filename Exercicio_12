@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float  a, b, c, d, ee, f, x, y;
+
+      cout << "Informe seis valores numericos respectivamente: ";
+      cin >> a;
+      cin >> b;
+      cin >> c;
+      cin >> d;
+      cin >> ee;
+      cin >> f;
+
+      x = (((c*ee)-(b*f)) / ((a*ee)-(b*d)));
+      y = (((a*f)-(c*d)) /  ((a*ee)-(b*d)));
+
+      c = (a*x) + (b*y);
+      f = (d*x) + (ee*y);
+
+      cout << "Valor de X: "<<x<<endl;
+      cout << " Valor de Y: "<< y<<endl;
+      cout <<"Prova real de C: "<<c<<" E do F: "<<f;
+
+    return 0;
+}

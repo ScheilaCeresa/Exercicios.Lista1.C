@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+   float a, b, c, p, area;
+
+   cout << "Informe os lados do triangulo: ";
+   cin >> a;
+   cin >> b;
+   cin >> c;
+
+   p = (a+b+c)/2;
+   area = sqrt((p)*(p-a)*(p-b)*(p-c));
+
+    cout << "Valor de P: "<< p<<endl;
+    cout << "Valor da area: "<<area;
+
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+   float raio, altura, volume;
+
+        cout << "Informe o valor do raio: ";
+        cin >> raio;
+        cout << "Informe o valor da altura: ";
+        cin >> altura;
+
+        volume = 3.1415 * pow(raio,2) * altura;
+
+        cout << "O volume da lata de oleo eh: "<< volume;
+    return 0;
+}

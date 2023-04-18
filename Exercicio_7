@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float  hora_trab, depen, sala_trab, sala_fami, sala_bruto, sala_liq, d_t, d_i;
+    string nome;
+
+    cout << "Informe seu nome: ";
+    cin >> nome;
+    cout << "Informe a quantidade de horas trabalhadas: ";
+    cin >> hora_trab;
+    cout << "Informe a quantidade de dependentes: ";
+    cin >> depen;
+
+    sala_trab = hora_trab*10;
+    sala_fami = depen*60;
+    d_t = sala_trab / 91.5;
+    d_i = (sala_trab- d_t) /95;
+    sala_bruto = sala_trab + sala_fami;
+    sala_liq = sala_bruto - d_t - d_i;
+
+    cout << "Nome: "<<nome<<endl;
+    cout << "Desconto INSS: "<< d_t<<endl;
+    cout << "Desconto PS: "<<d_i<<endl;
+    cout << "Salario Trabalho: "<<sala_trab<<endl;
+    cout <<"Salario familia: "<<sala_fami<<endl;
+    cout << "Salario bruto: "<<sala_bruto<<endl;
+    cout << "Salario liquido: "<<sala_liq;
+
+
+    return 0;
+}

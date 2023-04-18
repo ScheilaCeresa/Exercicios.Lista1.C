@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float hora_trab, valor_hora, sala_bruto, salario;
+    int depen;
+
+    cout << "Informe a quantidade de horas trabalhadas: ";
+    cin >> hora_trab;
+    cout << "Informe o valor da hora: ";
+    cin >> valor_hora;
+    cout << "Informe a quantidade de dependentes: ";
+    cin >> depen;
+
+    salario = hora_trab*valor_hora;
+    depen = salario * depen/10;
+    sala_bruto = salario + depen;
+
+    cout << "Salario bruto do funcionario: "<< sala_bruto;
+    return 0;
+}
